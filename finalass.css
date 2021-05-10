@@ -100,17 +100,27 @@ nav{
 }
 
 .container{
+    background-image: url("html/images/slider.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
-    display: flex;
-    justify-content: center;
-    max-width: 100%;
-    height: auto;
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode:soft-light;
+    height: 500px;
 }
 
-.container_img{
-    max-width: 100%;
-    height: auto;
-}
+/*.emp_border{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+    height: 25%;
+    border: 2px solid white;
+    padding: 30px 0;
+    
+}*/
 
 .intro{
     max-width: 1333px;
@@ -118,15 +128,33 @@ nav{
     position: absolute;
     top: 200px;
     color: white;
-    background-color: teal;
 }
 
-.div_stl{
+legend{
+    
+}
+
+fieldset{
+    border-color: white;
+    display:block;
+    width: fit-content;
+    height:110px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+/*.div_stl{
     display: flex;
     justify-content: center;
-}
+}*/
 
 #stl{
+    text-transform: capitalize;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
     width: 280px;
     font-size: 2.5em;
     text-align: center;
@@ -134,12 +162,14 @@ nav{
     margin: 0%;
 }
 
-.div_lorem{
+/*.div_lorem{
     display: flex;
     justify-content: center;
-}
+}*/
 
 .lorem{
+    font-family: 'Lato', sans-serif;
+    color: white;
     width: 450px;
     font-size: small;
     text-align: center;
@@ -148,26 +178,46 @@ nav{
 .div_rm{
     display: flex;
     justify-content: center;
+    bottom: -25px;
+   
 }
 
 .rm{
+    color: white;
+    position: absolute;
+    top: 57%;
+    left: 47%;
     width: 100px;
     text-align: center;
     border: 1px solid white;
+    outline-style: none;
+    outline-offset: 20px;
     padding: 5px;
 }
 
+/*  six container page 2  */
+
+.message{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
 .signup{
-    margin: 0px;
-    width: 184px;
+    position: absolute;
+    bottom: 300px;
+    margin: 10px;
+    width: 220px;
     background-color: white;
     padding: 20px 20px;
-    border: 1px solid black;
+    border: 1px solid white;
     box-shadow: 3px 3px 10px 2px #6c757d;
 }
 
 #name,#email{
     color: #6c757d;
+    width: 180px;
     background-color: #e8e8e4;
     border: 1px solid #e8e8e4;
     padding: 10px 20px;
@@ -198,7 +248,7 @@ nav{
 }
 
 .label_submit{
-    width: 190px;
+    width: 220px;
     border: 1px solid red;
     background-color: red;
     padding: 10px 20px;
@@ -207,8 +257,8 @@ nav{
 }
 
 .leave_message{
-    display: flex;
-    margin-left: 515px;
+    margin: 50px 0;
+    padding-left:295px;
 }
 
 .message_p1{
@@ -241,10 +291,10 @@ nav{
     margin: 16.185px 10px;
 }
 
-.message_button:hover{
+/*.message_button:hover{
     color: white;
     background-color: red;
-}
+}*/
 
 .message_h2{
     font-family: 'Josefin Sans', sans-serif;
@@ -273,6 +323,11 @@ nav{
 
 .six:hover{
     border: 1px solid red;
+}
+
+.six:hover .message_button{
+    color: white;
+    background-color: red;
 }
 
 .six .message_divwords{
@@ -328,6 +383,7 @@ nav{
 }
 
 .sp2{
+    color: red;
     padding: 5px 5px;
     margin: 0 5px;
     border-top: 1.5px solid #f00;
@@ -342,8 +398,11 @@ nav{
     border-top: 1.5px solid #f00;
 }
 
+/*  our causes  */
+
 .ourcauses_container{
     background-color: white;
+    padding: 0 20%;
 }
 
 .ourcauses_h1{
@@ -353,18 +412,22 @@ nav{
 }
 
 .ourcauses_p1{
-    color: gray;
+    /*color: gray;
     display: flex;
     margin-left: 380px;
     text-align: center;
     width: 450px;
     font-family: 'Lato', sans-serif;
+    font-size: small;*/
+    color: gray;
+    text-align: center;
     font-size: small;
+    font-family: 'Lato', sans-serif;
 }
 
 .ourcauses_div{
     display: flex;
-    margin: 30px 210px 0;
+    flex-wrap: wrap;
 }
 
 .ourcauses_figure{
@@ -393,10 +456,12 @@ nav{
 }
 
 .ourcauses_p{
-    padding-left: 10px;
     color: gray;
-    font-size: small;
+    margin-left: 20%;
+    text-align: center;
+    max-width: 55%;
     font-family: 'Lato', sans-serif;
+    font-size: small;
 }
 
 .ourcauses_range{
@@ -431,12 +496,14 @@ nav{
 
 .video{
     display: flex;
+    /*flex-wrap: wrap;*/
     background-color: black;
     color: white;
 }
 
 .vidfig{
     display: flex;
+    flex-wrap: wrap;
     position: relative;
     margin: 50px 200px;
 }
@@ -449,6 +516,8 @@ nav{
 }
 
 .brokenstory{
+    display: flex;
+    flex-wrap: wrap;
     margin-left: 30px;
     width: 500px;
     font-size: small;
@@ -498,6 +567,7 @@ nav{
 #our_volunteer{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     background-color: #f9f9f9;
     padding: 50px 100px 70px;
 }
@@ -509,11 +579,12 @@ nav{
 }
 
 .volunteer_p{
-    display: flex;
-    justify-content: center;
-    /*margin-left: 350px;*/
+    /*display: flex;
+    justify-content: center;*/
+    color: gray;
+    margin-left: 29%;
     text-align: center;
-    /*width: 500px;*/
+    max-width: 40%;
     font-family: 'Lato', sans-serif;
     font-size: small;
 }
@@ -536,7 +607,7 @@ nav{
 
 .volu_img{
     position: absolute;
-    bottom: 50%;
+    bottom: 65%;
     width: 150px;
     height: 150px;
 }
@@ -561,6 +632,7 @@ nav{
 .four_icon_p{
     display: flex;
     justify-content: space-around;
+    padding-bottom: 16px;
 }
 
 .volu_ul_li1{
@@ -582,12 +654,16 @@ nav{
     padding: 0 0 0 10px;
 }
 
-@media screen and (max-width:900px)/* and (min-width:990px) */{
+@media screen and (max-width:900px){
     .volu_fig{
         display: flex;
         flex-direction: column;
-        margin-top: 100px;
-    }    
+        margin-top: 150px;
+    }  
+    
+    .volu_div{
+        margin-top: 0;
+    }
 }
 
 /*  ABOUTUS FOOTER    */
@@ -646,7 +722,7 @@ nav{
     border: 1px solid #f00;
 }
 
-/*@media screen and (max-width:600px) {
+@media screen and (max-width:600px) {
     .b_aboutus_container{
         display: block;
         background-color: #242423;
@@ -662,7 +738,7 @@ nav{
     .b_aboutus_ul1{
         margin:0;
     }
-}*/
+}
 
 /*   FOOTER   */
 
