@@ -347,13 +347,21 @@ fieldset{
 }
 
 .leave_message{
-    /*display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;*/
     display: inline-block;
     justify-content: center;
     margin: 2% 0;
     padding:0 10% 0 40%;
+    /*position: relative;*/
+}
+
+.message_h1::before{
+    content:'';
+    position: absolute;
+    background-color: red;
+    width: 40px;
+    height: 1px;
+    top: 25px;
+    left:0%;
 }
 
 .message_p1{
@@ -369,6 +377,7 @@ fieldset{
 .message_h1{
     margin: 0;
     font-family: 'PT Sans', sans-serif;
+    position: relative;
 }
 
 .message_h1span{
@@ -396,6 +405,17 @@ fieldset{
 
 .message_h2{
     font-family: 'Josefin Sans', sans-serif;
+    position: relative;
+}
+
+.message_h2::before{
+    content:'';
+    position: absolute;
+    background-color: red;
+    width: 70px;
+    height: 1px;
+    top: 25px;
+    left:0%;
 }
 
 .message_p{
@@ -507,6 +527,17 @@ fieldset{
 .abt{
     font-family: 'PT Sans', sans-serif;
     font-size:medium;
+    position: relative;
+}
+
+.abt::before{
+    content:'';
+    position: absolute;
+    background-color: red;
+    width: 50px;
+    height: 1px;
+    top: 25px;
+    left:0%;
 }
 
 .donate-container{
@@ -677,7 +708,7 @@ fieldset{
 
 .ourcauses_container{
     background-color: white;
-    padding: 0 20%;
+    padding: 0 17%;
 }
 
 .ourcauses_h1{
@@ -694,6 +725,8 @@ fieldset{
     width: 450px;
     font-family: 'Lato', sans-serif;
     font-size: small;*/
+    margin: 2% 22%;
+    width: 55%;
     color: gray;
     text-align: center;
     font-size: small;
@@ -707,17 +740,18 @@ fieldset{
 }
 
 .ourcauses_figure{
-    width: 250px;
+    width: 280px;
     height: 500px;
     margin: 0 5px;
 }
 
 .ourcauses_figcaption{
     border: 1px solid #e5e5e5;
+    padding: 10px 0;
 }
 
 .ourcauses_img{
-    width: 250px;
+    width: 280px;
     height: 200px;
 }
 
@@ -725,6 +759,17 @@ fieldset{
     padding-left: 10px;
     font-size: small;
     font-family: 'Josefin Sans', sans-serif;
+    position: relative;
+}
+
+.ourcauses_h2::before{
+    content:'';
+    position: absolute;
+    background-color: red;
+    width: 50px;
+    height: 1px;
+    top: 15px;
+    left: 10px;;
 }
 
 .ourcauses_span{
@@ -733,11 +778,13 @@ fieldset{
 
 .ourcauses_p{
     color: gray;
-    margin-left: 20%;
-    text-align: center;
-    max-width: 55%;
+    margin:5% 0;
+    padding: 0 10px;
+    width: 90%;
     font-family: 'Lato', sans-serif;
     font-size: small;
+    float: left;
+    line-height: 1.5em;
 }
 
 .ourcauses_range{
@@ -812,6 +859,15 @@ fieldset{
         width: 98%;
         height: 500px;
         margin: 0 5px;
+    }
+
+    .ourcauses_p{
+        color: gray;
+        margin-left: 20%;
+        text-align: center;
+        max-width: 55%;
+        font-family: 'Lato', sans-serif;
+        font-size: small;
     }*/
 
     .ourcauses_p1{
@@ -1400,6 +1456,17 @@ fieldset{
 .b_abtus_mainli{
     font-family: 'PT Sans', sans-serif;
     margin-bottom: 20px;
+    position: relative;
+}
+
+.b_abtus_mainli::before{
+    content:'';
+    position: absolute;
+    background-color: red;
+    width: 50px;
+    height: 1px;
+    top: 25px;
+    left: 0px;;
 }
 
 .b_abtus_li{
