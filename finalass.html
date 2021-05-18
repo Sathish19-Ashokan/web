@@ -13,18 +13,29 @@
 <body>
   <header>
     <address class="top_head">
-      <ul id="add1">
-        <li class="li1"><i class="fa fa-phone" aria-hidden="true"></i></li>
+      <!--<ul id="add1">
+        <li class="li1 icli"><i class="fa fa-phone" aria-hidden="true"></i></li>
         <li class="li2">+123-456-7890</li>
-        <li class="li3"><i class="fa fa-envelope" aria-hidden="true"></i></li>
+        <li class="li3 icli"><i class="fa fa-envelope" aria-hidden="true"></i></li>
         <li class="li4">info@gmail.com</li>
       </ul>
 
       <ul id="social">
-        <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
-        <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
-        <li class="gplus"><i class="fa fa-google-plus" aria-hidden="true"></i></li>
-        <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+        <li class="icli"><i class="fa fa-facebook" aria-hidden="true"></i></li>
+        <li class="icli"><i class="fa fa-twitter" aria-hidden="true"></i></li>
+        <li class="gplus icli"><i class="fa fa-google-plus" aria-hidden="true"></i></li>
+        <li class="icli"><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+      </ul>-->
+      <ul id="add1">
+        <li class="first-li"><button class="li1 icli"><i class="fa fa-phone" aria-hidden="true"></i></button><span class="li2">+123-456-7890 </span></li>
+        <li><button class="li3 lin icli"><i class="fa fa-envelope" aria-hidden="true"></i></button><span class="li4">info@gmail.com</span></li>
+      </ul>
+
+      <ul id="social">
+        <li><button class="lin icli"><i class="fa fa-facebook" aria-hidden="true"></i></button></li>
+        <li><button class="lin icli"><i class="fa fa-twitter" aria-hidden="true"></i></button></li>
+        <li><button class="gplus icli"><i class="fa fa-google-plus" aria-hidden="true"></i></button></li>
+        <li><button class="lin icli"><i class="fa fa-linkedin" aria-hidden="true"></i></button></li>
       </ul>
     </address>
   </header>
@@ -92,7 +103,7 @@
 
         <div class="dropdown6">
           <ul class="icon">
-            <li><i class="fa fa-question-circle" aria-hidden="true"></i></li>
+            <li><i class="fa fa-life-ring" aria-hidden="true"></i></li>
             <li>FAQs</li>
           </ul>
           <div class="dropdown-content6">
@@ -154,10 +165,10 @@
         <p class="lorem">Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit, Sed Do Eiusmod Tempor Incididunt Ut
           Labore Et Dolore Magna Aliqua.</p>
       </fieldset>
-        <p class="rm">Read more</p>
+      <p class="rm">Read more</p>
     </section>
     <section class="message">
-      <div class=message_div>
+      <div class="message_div div-form">
         <form class="signup">
           <div class="name">
             <label class="label_name" for="name">Name</label><br>
@@ -182,7 +193,7 @@
         </article>
       </div>
       <!--<section class="message_sec">-->
-      <div class="message_div">
+      <div class="message_div div-six">
         <article class="six inter_element">
           <div class="message_divbutton">
             <p class="message_button"><i class="fa fa-wrench" aria-hidden="true"></i></p>
@@ -216,7 +227,7 @@
           </div>
         </article>
       </div>
-      <div class="message_div">
+      <div class="message_div div-six">
         <article class="six contribute">
           <div class="message_divbutton">
             <p class="message_button"><i class="fa fa-credit-card" aria-hidden="true"></i></p>
@@ -254,9 +265,11 @@
       <div class="drop">
         <p class="sp2"><i class="fa fa-tint" aria-hidden="true"></i></p>
       </div>
-      <p class="abtp">Charixy is the charity, Non-profit government organization, fundraising. Our activities help
-        entrepreneurs get
-        the target.</p>
+      <div class="div-abtp">
+        <p class="abtp">Charixy is the charity, Non-profit government organization, fundraising. Our activities help
+          entrepreneurs get
+          the target.</p>
+      </div>
       <div class="donate-container">
         <section id="div1">
           <article id="donation">
@@ -296,9 +309,11 @@
       <div class="drop">
         <div class="sp2"><i class="fa fa-tint" aria-hidden="true"></i></div>
       </div>
-      <p class="ourcauses_p1">Charixy is the charity, Non-profit government organization, fundraising. Our
-        activities help entrepreneurs get
-        the target.</p>
+      <div class="div-ourcauses_p1">
+        <p class="ourcauses_p1">Charixy is the charity, Non-profit government organization, fundraising. Our
+          activities help entrepreneurs get
+          the target.</p>
+      </div>
       <div class="ourcauses_div">
         <figure class="ourcauses_figure">
           <img class="ourcauses_img" src="html/images/causes-1.jpg" alt="Feed food">
@@ -381,13 +396,16 @@
       </figure>
     </section>-->
     <section class="video">
-      <figure class="vidfig">
-        <img class="video-img" src="html/images/video-img.jpg" alt="video-of-child">
-        <div class="video-button">
-          <img class="btn" src="html/images/play-btn.png" alt="playbutton">
-        </div>
-      </figure>
-      <div class="brokenstory">
+      <article class="art-video">
+        <figure class="vidfig">
+          <div class="img-abs">
+            <img class="video-img" src="html/images/video-img.jpg" alt="video-of-child">
+            <img class="btn" src="html/images/play-btn.png" alt="playbutton">
+          </div>  
+          <!--<div class="video-button">
+            <img class="btn" src="html/images/play-btn.png" alt="playbutton">
+          </div>--> 
+        </figure>
         <figcaption class="video-figcaption">
           <h2 class="vih1">HEART BROCKEN STORY</h2>
           <p class="video_p">Even the all-powerfull Pointing has no control about the blind texts it is an almost
@@ -402,16 +420,18 @@
             >>
           </p>
         </figcaption>
-      </div>
+      </article>
     </section>
     <section class="gallery_container">
       <h1 class="gallery_h1">OUR GALLERY</h1>
       <div class="drop">
         <div class="sp2"><i class="fa fa-tint" aria-hidden="true"></i></div>
       </div>
-      <p class="gallery_p">Charixy is the charity, Non-profit government organization, fundraising. Our activities help
-        entrepreneurs get
-        the target.</p>
+      <div class="div-gallery_p">
+        <p class="gallery_p">Charixy is the charity, Non-profit government organization, fundraising. Our
+          activities help entrepreneurs get
+          the target.</p>
+      </div>
       <div class="gallery-container">
         <div class="gallery-item gallery-item1">
           <img src="html/images/gallery-1.jpg" alt="">
@@ -439,9 +459,11 @@
       <div class="drop">
         <div class="sp2"><i class="fa fa-tint" aria-hidden="true"></i></div>
       </div>
-      <p class="volunteer_p">Charixy is the charity, Non-profit government organization, fundraising. Our activities
-        help entrepreneurs get
-        the target.</p>
+      <div class="div-volunteer_p">
+        <p class="volunteer_p">Charixy is the charity, Non-profit government organization, fundraising. Our activities
+          help entrepreneurs get
+          the target.</p>
+      </div>
       <div class="volu_div">
         <div>
           <figure class="volu_fig">
